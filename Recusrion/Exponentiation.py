@@ -3,7 +3,6 @@ def power(a,b):
         return 1
     else:
         return (a*pow(a,b-1))
-    power(2,3)
 
     # also it can be implemented as
 def factorial(n):
@@ -11,4 +10,4 @@ def factorial(n):
         return 1
     else:
         return n*factorial(n-1)
-    factorial(5)
+ 
