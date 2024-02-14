@@ -10,7 +10,7 @@ def rev_number(num):#function to reverse a number
         return num#returning the number if it has only one digit
     else:
         d=digits(rev_number(num//10))#finding the number of digits in the number
-        num1=(num%10)*(10**d)+rev_number(num//10)#reversing the number
+        num1=(num%10)*(10**d)+rev_number(num//10)#returning the reverse of the number
         return num1
 
 print(rev_number(12345))

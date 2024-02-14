@@ -13,3 +13,10 @@ def sum_list(L):#function to find the sum of elements of a list
         return L[0]#returning the number if the list has only one element
     else:
         return L[0]+sum_list(L[1:])#returning the sum of the first element and the sum of the rest of the list
+    
+ #Finding the sum of digits of a given number using recursion
+def sum_digits(num):#function to find the sum of digits of a number
+    if(num//10==0):#base case
+        return num#returning the number if it has only one digit
+    else:
+        return num%10+sum_digits(num//10)#returning the sum of the last digit and the sum of the rest of the number   
