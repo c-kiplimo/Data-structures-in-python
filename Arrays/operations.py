@@ -69,4 +69,3 @@ def fnd_quar_devition(arr, n):
 
 
 
-
