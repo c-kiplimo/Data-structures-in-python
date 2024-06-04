@@ -8,8 +8,17 @@ def reverse(L):#function to reverse a list
 
 
     #reverse a string
-def reverse(s):#function to reverse a string
-    if len(s)==1:#base case
-        return s#returning the string if it has only one character
-    else:
-        return (s[-1]+reverse(s[:-1]))#returning the reverse of the string
+class Solution(object):
+    def reverseWords(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        words = s.split()  # Split the string into words
+        reversed_words = words[::-1]  # Reverse the list of words
+        return ' '.join(reversed_words)  # Join the reversed words back into a string
+
+# Example usage:
+solution = Solution()
+s = "hello world"
+print(solution.reverseWords(s))  # Output: "world hello"
