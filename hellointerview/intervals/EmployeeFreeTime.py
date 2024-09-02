@@ -15,4 +15,5 @@ def employeeFreeTime(schedule):
     end = merged[i][0]
     free_times.append([start, end])
 
+
   return free_times
