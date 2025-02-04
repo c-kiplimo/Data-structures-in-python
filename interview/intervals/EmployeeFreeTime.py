@@ -12,7 +12,7 @@ def employeeFreeTime(schedule):
   free_times = []
   for i in range(1, len(merged)):
     start = merged[i - 1][1]
-    end = merged[i][0]
+    end = me.rged[i][0]
     free_times.append([start, end])
 
 

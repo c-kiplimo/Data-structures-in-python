@@ -8,7 +8,7 @@ class Solution:
             # For each orchard, calculate the hours needed to harvest apples at the specified rate
             for i in range(len(apples)):
                 # Ceiling division to calculate time for current orchard
-                time += (apples[i] + rate - 1) // rate 
+                time += (apples[i] + rate - 1) //rate
             return time  # Return the total time for the current rate
 
         # Initialize the search range for the rate: 
